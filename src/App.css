@@ -37,10 +37,81 @@ header li a {
 	transition: all .3s ease-out;
 }
 
-header li a:hover{
+header li a:hover {
 	opacity: .75;
 }
 
 header li a.email {
 	text-decoration: underline;
+}
+
+main {
+	padding: 0 1em;
+	width: 100vw;
+	min-height: calc(100vh - 100px);
+	max-width: 1000px;
+	margin: 0 auto;
+	position: relative;
+}
+
+.splash {
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	align-items: flex-end;
+	font-size: 24px;
+	font-weight: 100;
+	position: absolute;
+	margin: 0 auto;
+	top: calc(50% - 100px);
+	left: 50%;
+	transform: translate(-50%, -50%);
+	white-space: nowrap;
+}
+
+.left-splash {
+	text-align: right;
+	padding-right: 10px;
+}
+
+
+.right-splash {
+	text-align: left;
+}
+
+s, strike {
+  text-decoration:none;
+  position:relative;
+
+}
+
+s::before, strike::before {
+  top: 50%; /*tweak this to adjust the vertical position if it's off a bit due to your font family */
+	background:rgba(0,153,204,.5);
+	opacity:.7;
+  content: '';
+  width: 110%;
+  position: absolute;
+  height:.1em;
+  border-radius:.1em;
+  left: -5%;
+  white-space:nowrap;
+  display: block;
+  transform: rotate(-3deg);
+}
+
+s.straight::before, strike.straight::before {
+  transform: rotate(0deg);
+  left:-1%;
+  width:100%;
+}
+
+.strikethrough {
+	color: #BFBFBF;
+	text-decoration-color: rgba(0, 0, 0, 0.25);
+}
+
+.answer {
+	font-weight: 900;
+	color: #0099cc;
 }
