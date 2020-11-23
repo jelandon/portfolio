@@ -6,7 +6,7 @@ header {
 	width: 100%;
 }
 
-header a#logo {
+header #logo {
 	height: 100px;
 	width: 100px;
 }
