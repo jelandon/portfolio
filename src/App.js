@@ -21,10 +21,10 @@ function App() {
               </a>
             </li>
             <li>
-              <Link to="/profile/work">WORK</Link>
+              <Link to="/portfolio/work">WORK</Link>
             </li>
             <li>
-              <Link to="/profile/about">ABOUT</Link>
+              <Link to="/portfolio/about">ABOUT</Link>
             </li>
           </ul>
         </header>
@@ -32,10 +32,10 @@ function App() {
           <Route path="/portfolio">
             <Splash />
           </Route>
-          <Route path="/profile/work">
+          <Route path="/portfolio/work">
             <Work />
           </Route>
-          <Route path="/profile/about">
+          <Route path="/portfolio/about">
             <About />
           </Route>
         </Switch>
